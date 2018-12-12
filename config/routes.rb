@@ -1,4 +1,10 @@
 Rails.application.routes.draw do
+  get 'country/all_states'
+
+  get 'country/top_five_pop'
+
+  get 'country/top_five_area'
+
   resources :activities
   resources :states
   get 'ilovetocode' => 'welcome#index'
